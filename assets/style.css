@@ -43,8 +43,8 @@ main {
   margin: 10%;
 }
 .headshot {
-  max-width: 250px;
-  max-height: 300px;
+  width: 250px;
+  height: 300px;
   border-radius: 4em;
 }
 .grid-1,
