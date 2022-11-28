@@ -1,5 +1,6 @@
 :root {
   --link-color: #fff;
+  --link-weight: bolder;
 }
 
 body {
@@ -21,17 +22,21 @@ header {
 }
 a:link {
   color: var(--link-color);
+  font-weight: var(--link-weight);
   text-decoration: none;
 }
 a:hover {
-  color: var(--link-color);
+  color: #f652a0;
+  font-weight: var(--link-weight);
   text-decoration: underline overline;
 }
 a:visited {
   color: var(--link-color);
+  font-weight: var(--link-weight);
 }
 a:active {
   color: #0c7489;
+  font-weight: var(--link-weight);
 }
 main {
   display: grid;
@@ -39,19 +44,14 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: center;
   margin: 10%;
 }
 .headshot {
   width: 250px;
   height: 300px;
   border-radius: 4em;
-}
-.grid-1,
-.grid-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-1,
@@ -64,5 +64,16 @@ main {
 @media screen and (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
+  }
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4 {
+    width: 400px;
+    height: 200px;
+  }
+  .logo {
+    width: 400px;
+    height: 400px;
   }
 }
