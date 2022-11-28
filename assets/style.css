@@ -38,21 +38,22 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 1em;
-  grid-row-gap: 2em;
+  grid-row-gap: 1em;
+  justify-content: space-evenly;
   margin: 10%;
 }
 .headshot {
-  max-width: 50%;
+  max-width: 250px;
+  max-height: 300px;
   border-radius: 4em;
 }
-.grid-1 {
-  font-size: 5em;
-  text-align: center;
-}
+.grid-1,
 .grid-2 {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .project-1,
 .project-2,
 .project-3,
