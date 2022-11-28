@@ -1,0 +1,57 @@
+:root {
+  --link-color: #fff;
+}
+
+body {
+  background-color: #d7d9ce;
+  color: #040404;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+header {
+  background-color: #13505b;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+.nav-items {
+  padding: 1em;
+}
+a:link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-color);
+  text-decoration: underline overline;
+}
+a:visited {
+  color: var(--link-color);
+}
+a:active {
+  color: #0c7489;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+  margin: 10%;
+}
+.headshot {
+  max-width: 50%;
+  border-radius: 4em;
+}
+.grid-2 {
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
