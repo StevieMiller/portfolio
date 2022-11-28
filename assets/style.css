@@ -45,11 +45,21 @@ main {
   max-width: 50%;
   border-radius: 4em;
 }
-.grid-2 {
-  align-items: center;
-  justify-items: center;
+.grid-1 {
+  font-size: 5em;
+  text-align: center;
 }
-
+.grid-2 {
+  display: flex;
+  justify-content: center;
+}
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  width: 600px;
+  height: 300px;
+}
 @media screen and (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
