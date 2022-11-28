@@ -11,9 +11,9 @@
   <header>
     <nav>
       <ul class="nav">
-        <li class="nav-items"><a href="#">About</a></li>
-        <li class="nav-items"><a href="#">Projects</a></li>
-        <li class="nav-items"><a href="#">Contact</a></li>
+        <li class="nav-items"><a href="#about">About</a></li>
+        <li class="nav-items"><a href="#projects">Projects</a></li>
+        <li class="nav-items"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
           <img class="headshot" src="assets/images/headshot.jpg" />
         </div>
       </div>
-      <div class="projects-row1">
+      <div id="projects" class="projects-row1">
         <div>
           <img
             class="project"
@@ -57,6 +57,41 @@
               alt="Project Placeholder"
             />
           </div>
+        </div>
+      </div>
+
+      <div class="about-contact">
+        <div class="about">
+          <h1 id="about">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            rem modi amet temporibus non maxime nobis dicta magni asperiores
+            delectus? Similique non repellat nemo mollitia odio quasi fugiat ad
+            rem?
+          </p>
+        </div>
+        <div class="contact">
+          <h1 id="contact">Contact</h1>
+          <div class="contact-form">
+            <form action="action_page.php">
+              <p>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="First name" style="width:500px">
+            </p>
+            <p>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Last Name" style="width:500px">
+            </p>
+            <p>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="What would you like to know?" style="height:200px"></textarea>
+            </p>
+            <p>
+            <input type="submit" class="submit" value="Submit">
+          </p>
+            </form>
+          </div>
+          </p>
         </div>
       </div>
     </main>
