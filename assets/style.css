@@ -45,6 +45,8 @@ main {
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin: 10%;
+  justify-content: center;
+  align-content: center;
 }
 .headshot {
   width: 250px;
