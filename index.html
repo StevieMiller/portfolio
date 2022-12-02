@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stevie Galaxy</title>
+    <title>Stevie Miller: Portfolio</title>
     <link href="assets/reset.css" rel="stylesheet" />
     <link href="assets/style.css" rel="stylesheet" />
   </head>
@@ -18,82 +18,81 @@
     </nav>
   </header>
   <body>
-    <main>
-      <div class="logo-headshot">
-        <div>
-          <img class="logo" src="assets/images/logo.png" alt="Stevie Galaxy" />
-        </div>
-        <div>
-          <img class="headshot" src="assets/images/headshot.jpg" />
-        </div>
+    <section class="container1">
+      <div class="box box-1">
+        <img src="assets/images/logo.png" />
       </div>
-      <div id="projects" class="projects-row1">
-        <div>
-          <img
-            class="project"
-            src="assets/images/project.png"
-            alt="Project Placeholder"
-          />
-        </div>
-        <div>
-          <img
-            class="project"
-            src="assets/images/project.png"
-            alt="Project Placeholder"
-          />
-        </div>
-        <div class="projects-row2">
-          <div>
-            <img
-              class="project"
-              src="assets/images/project.png"
-              alt="Project Placeholder"
-            />
-          </div>
-          <div>
-            <img
-              class="project"
-              src="assets/images/project.png"
-              alt="Project Placeholder"
-            />
-          </div>
-        </div>
+      <div class="box box-2">
+        <img class="headshot" src="assets/images/headshot.png" width="300" />
+      </div>
+    </section>
+    <section class="container2" id="projects">
+      <div class="box box-3">
+        <a href="https://steviemiller.github.io/mini-project-01/">
+          <img src="assets/images/mini-project-01.png" width="450"
+        /></a>
+      </div>
+      <div class="box box-4">
+        <img src="assets/images/project.png" width="450" />
+      </div>
+    </section>
+    <section class="container3">
+      <div class="box box-5">
+        <img src="assets/images/project.png" width="450" />
+      </div>
+      <div class="box box-6">
+        <img src="assets/images/project.png" width="450" />
+      </div>
+    </section>
+    <section class="container4">
+      <div class="box box-7">
+        <h1 id="about">About Me</h1>
+        <p>
+          My name is Stevie Miller. I was born and raised in southeast New
+          Mexico and lived in San Francisco, CA for over a decade. Now I am back
+          in my hometown and starting a new journey down a career path to web
+          development. I have an adorable cat named Galaxy who likes to cuddle
+          with me while I code. I hope you enjoy the examples of my work here.
+          Please reach out to me via the contact form below if you'd like to
+          know more!
+        </p>
       </div>
 
-      <div class="about-contact">
-        <div class="about">
-          <h1 id="about">About Me</h1>
+      <div class="box box-8">
+        <h1 id="contact">Contact</h1>
+        <form action="action_page.php">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            rem modi amet temporibus non maxime nobis dicta magni asperiores
-            delectus? Similique non repellat nemo mollitia odio quasi fugiat ad
-            rem?
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First name"
+            />
           </p>
-        </div>
-        <div class="contact">
-          <h1 id="contact">Contact</h1>
-          <div class="contact-form">
-            <form action="action_page.php">
-              <p>
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="First name" style="width:500px">
-            </p>
-            <p>
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Last Name" style="width:500px">
-            </p>
-            <p>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="What would you like to know?" style="height:200px"></textarea>
-            </p>
-            <p>
-            <input type="submit" class="submit" value="Submit">
+          <p>
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name"
+            />
           </p>
-            </form>
-          </div>
+          <p>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="What would you like to know?"
+            ></textarea>
           </p>
-        </div>
+          <p>
+            <input type="submit" class="submit" value="Submit" />
+          </p>
+        </form>
       </div>
-    </main>
+    </section>
   </body>
+  <footer class="footer">Made by Stevie Miller 2022 ❤️</footer>
 </html>
