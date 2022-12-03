@@ -144,4 +144,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .box-7 {
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+  }
 }
