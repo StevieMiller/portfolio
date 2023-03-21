@@ -32,6 +32,10 @@ a:active {
   color: var(--hover-color);
 }
 
+.project-card {
+  width: 500px;
+}
+
 .card-title,
 .card-text {
   color: #000;
@@ -40,15 +44,6 @@ a:active {
 .navbar {
   font-size: 22px;
   background-color: rgba(0, 0, 0, 0.25);
-}
-
-.welcome {
-  margin: 25em;
-}
-
-.container {
-  padding: 10em;
-  margin: 7em 0 0;
 }
 
 input[type="text"],
