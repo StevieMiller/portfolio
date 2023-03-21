@@ -11,6 +11,7 @@ body {
   background-image: linear-gradient(to bottom right, #a90076, #daa520);
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 img {
@@ -32,6 +33,10 @@ a:active {
   color: var(--hover-color);
 }
 
+.margins {
+  margin-top: 300px;
+}
+
 .project-card {
   width: 500px;
 }
@@ -44,6 +49,11 @@ a:active {
 .navbar {
   font-size: 22px;
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.about,
+.contact {
+  margin-bottom: 50px;
 }
 
 input[type="text"],
