@@ -5,20 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stevie Miller: Portfolio</title>
-    <link href="assets/reset.css" rel="stylesheet" />
-    <link href="assets/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <header>
-    <nav>
-      <ul class="nav">
-        <li class="nav-items"><a href="#about">About</a></li>
-        <li class="nav-items"><a href="#projects">Projects</a></li>
-        <li class="nav-items"><a href="#contact">Contact</a></li>
-      </ul>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
+
   <body>
-    <section class="container1">
+
+<!--     **********     Welcome section     **********     -->
+
+    <section class="welcome d-flex justify-content-center">
       <div class="box box-1">
         <img src="assets/images/logo.png" />
       </div>
@@ -26,27 +56,85 @@
         <img class="headshot" src="assets/images/headshot.png" width="300" />
       </div>
     </section>
-    <section class="container2" id="projects">
-      <div class="box box-3">
-        <a href="https://steviemiller.github.io/mini-project-01/">
-          <img src="assets/images/mini-project-01.png" width="450"
-        /></a>
-      </div>
-      <div class="box box-4">
-        <a href="https://jshigoodies.github.io/Animanga/">
-        <img src="assets/images/animanga-portfolio.png" width="450" />
-      </a>
-      </div>
-    </section>
-    <section class="container3">
-      <div class="box box-5">
-        <img src="assets/images/project.png" width="450" />
-      </div>
-      <div class="box box-6">
-        <img src="assets/images/project.png" width="450" />
-      </div>
-    </section>
-    <section class="container4">
+
+<!--     **********     Project section     **********     -->
+
+<section id="projects">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <a href="https://steviemiller.github.io/mini-project-01/">
+            <img
+              src="/assets/images/mini-project-01.png"
+              class="card-img-top"
+              alt="My New Website"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">My New Website</h5>
+              <p class="card-text">
+                This is the first mini-project I completed for Rice University's
+                Coding Bootcamp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="https://jshigoodies.github.io/Animanga/">
+            <img
+              src="/assets/images/animanga-portfolio.png"
+              class="card-img-top"
+              alt="Animanga"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Animanga</h5>
+              <p class="card-text">
+                This is the first group project I completed for Rice
+                University's Coding Bootcamp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="/assets/images/quiz-master-max.png"
+              class="card-img-top"
+              alt="Quiz Master Max"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quiz Master Max</h5>
+              <p class="card-text">
+                This is the second project I completed for Rice University's Coding Bootcamp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="/assets/images/project.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coming soon...</h5>
+              <p class="card-text">
+                Check back later for a link to my next finished project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--     **********     About section     **********     -->
+
+    <section id="about">
+      <div class="container">
       <div class="box box-7">
         <h1 id="about">About Me</h1>
         <p>
@@ -59,7 +147,12 @@
           know more!
         </p>
       </div>
+    </div>
+    </section>
 
+<!--     **********     Contact section     **********     -->
+
+<section id="contact">
       <div class="box box-8">
         <h1 id="contact">Contact</h1>
         <form action="action_page.php">
@@ -95,6 +188,12 @@
         </form>
       </div>
     </section>
+    
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
   <footer class="footer">Made by Stevie Miller 2022 ❤️</footer>
 </html>

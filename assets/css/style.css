@@ -1,92 +1,56 @@
 :root {
   --link-color: #fff;
   --link-weight: bolder;
-  --bkg-dark: #13505b;
+  --bkg-dark: #a90076;
   --hover-color: #f652a0;
 }
 
 body {
-  background-color: #d7d9ce;
-  color: #040404;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 22px;
+  background-color: #a90076;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #a90076, #daa520);
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
 }
-header {
-  background-color: var(--bkg-dark);
+
+img {
+  border-radius: 10px;
 }
-.nav {
-  display: flex;
-  justify-content: end;
-  list-style-type: none;
-}
-.nav-items {
-  padding: 1em;
-}
+
 a:link {
   color: var(--link-color);
-  font-weight: var(--link-weight);
   text-decoration: none;
 }
 a:hover {
   color: var(--hover-color);
-  font-weight: var(--link-weight);
   text-decoration: underline overline;
 }
 a:visited {
   color: var(--link-color);
-  font-weight: var(--link-weight);
 }
 a:active {
-  color: #0c7489;
-  font-weight: var(--link-weight);
-}
-.container1 {
-  margin-top: 5em;
-}
-.container1,
-.container2,
-.container3,
-.container4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container4 {
-  flex-direction: column;
-  margin-top: 5em;
-}
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box-1,
-.box-2 {
-  width: 500px;
-  height: 500px;
-}
-.headshot {
-  border-radius: 10px;
-}
-.box-3,
-.box-4,
-.box-5,
-.box-6 {
-  width: 500px;
-  height: 250px;
+  color: var(--hover-color);
 }
 
-.box-7 {
-  flex-direction: column;
-  width: 700px;
-  height: 500px;
+.card-title,
+.card-text {
+  color: #000;
 }
-.box-8 {
-  flex-direction: column;
-  width: 700px;
-  height: 700px;
+
+.navbar {
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
+
+.welcome {
+  margin: 25em;
+}
+
+.container {
+  padding: 10em;
+  margin: 7em 0 0;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -115,7 +79,6 @@ input[type="submit"]:hover {
 }
 footer {
   text-align: center;
-  background-color: var(--bkg-dark);
   color: var(--link-color);
   height: 4em;
   display: flex;
